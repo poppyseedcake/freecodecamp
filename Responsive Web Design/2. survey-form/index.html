@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ankieta</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Wielka ankieta o niczym</h1>
+    <p id="description">Dziekujemy za wsparcie w rozwoju portalu o niczym</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Johy" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="johny.bravo@gmail.com" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Some number</label>
+        <input id="number" name="number" type="number" placeholder="0-9" required min="0" max="9"/>
+      </div>
+      <div class="form-group">      
+        <label for="dropdown">Choose your fav nic</label>
+        <select id="dropdown" name="dropdown">
+          <option id="">(select options)</option>
+          <option id="1">NIC</option>
+          <option id="2">NICOSC</option>
+          <option id="3">PUSTKA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Your gender</p>
+        <label for="female">
+          <input id="female" type="radio" name="gander" value="female" class="inline" checked />
+           Female
+        </label>
+        <label for="male">
+          <input id="male" type="radio" name="gander" value="male" class="inline" />
+           Male
+        </label>
+        <label for="other">
+          <input id="other" type="radio" name="gander" value="other" class="inline" />
+           Other
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Where did you hear about us?</p>
+        <label for="internet">
+          <input id="internet" type="checkbox" name="internet" class="inline" value="internet"/>
+           Internet
+        </label>
+        <label for="ads">
+          <input id="ads" type="checkbox" name="ads" class="inline" value="ads"/>
+           Ads
+        </label>
+        <label for="friend">
+          <input id="friend" type="checkbox" name="friend" class="inline" value="friend"/>
+           Friend
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="comment">Provide additional comment:</label>
+        <textarea id="comment" name="comment" rows="3" cols="30" pleceholder="I love your site because..."></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit" value="Submit">
+        Submit
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
